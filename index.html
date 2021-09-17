@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Learn Game Development at Zenva.com</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />  
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <style>
+      canvas {
+        width: 100%;
+      }
+    </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row mt-5" style="margin-top: 61px;">
+      <div class="col-sm-6">
+        <div id="phaser-demo"></div>
+        <button type="button" id="run" class="nes-btn is-success">Run</button>
+      </div>
+      <div class="col-sm-6">
+        <div class="nes-container is-dark with-title">
+          <p class="title">Missions</p>
+          <p>Hi ! Our Hero Needs to get the tresure can you help him !</p>
+        </div>
+        <section class="nes-container">
+          <section class="message-list">
+            <section class="message -left ">
+             
+              <!-- Balloon -->
+              <div class="nes-balloon from-left d-flex justify-content-between">
+                <i class="nes-mario"></i>
+                <p>Please Help Me get my Map for mission which is in the tresure</p>
+              </div>
+            </section>
+          </section>
+        </section>
+        <label for="textarea_field" style="margin-top: 15px;">Use Our Hero Skill To get to the Tresure</label>
+        <div class="nes-container with-title is-centered">
+          <p class="title">Functions Available</p>
+          <p>moveForward(steps)</p>
+          <p>moveBack(steps)</p>
+        </div>
+         <textarea id="prog_field" class="nes-textarea" placeholder="User you Functions here"></textarea>
+      </div>
+    </div>
+  </div> 
+  <div class="container-fluid">
+    <div class="row" style="margin: 61px;">
+      
+        <div class="col-md-10">
+          <label for="prog">Your Progress</label>
+          <progress class="nes-progress is-error"  id="prog" value="1" max="100"></progress>
+        </div>
+        <div class="col-md-2">
+          <i class="nes-icon trophy is-large" style="margin: 19px;"></i>
+
+        </div>
+    </div>
+  
+  </div>
+  <section>
+    <dialog class="nes-dialog is-dark is-rounded" id="dialog-dark-rounded">
+      <form method="dialog">
+        <p class="title">Hurray</p>
+        <p>You are awesome ! <br> Get to the next level now !!!</p>
+        <menu class="dialog-menu">
+          <button class="nes-btn">Cancel</button>
+          <button class="nes-btn is-primary">Confirm</button>
+        </menu>
+      </form>
+    </dialog>
+  </section>
+  <!-- <script src="js/collision.js"></script> -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/phaser-matter-collision-plugin"></script> -->
+  <!-- <script src="js/phaser.js"></script> -->
+  <script src="//cdn.jsdelivr.net/npm/phaser@3.16.2/dist/phaser.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
